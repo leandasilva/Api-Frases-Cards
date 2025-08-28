@@ -10,7 +10,7 @@ var port = 3800;
 // Conexión Database
 mongoose.set('strictQuery', false);
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/challenger',{useNewUrlParser:true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://leandro-cluster0:Lkd36108227@cluster0.fpxng0x.mongodb.net/challenger?retryWrites=true&w=majority&appName=Cluster0',{useNewUrlParser:true, useUnifiedTopology: true })
 		.then(() => {
 			console.log("La conexión a la base de datos challenger se ha realizado correctamente!!");
 		
